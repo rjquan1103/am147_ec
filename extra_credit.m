@@ -15,9 +15,9 @@ t_step = 500;
 
 %% Integrators
 
-[t_rk,y_rk]   = pend(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'rk');
-[t_trp,y_trp] = pend(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'trp');
-[t_eul,y_eul] = pend(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'eul');
+[t_rk,y_rk]   = pendulum(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'rk');
+[t_trp,y_trp] = pendulum(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'trp');
+[t_eul,y_eul] = pendulum(t_intv,ICs,t_step,m1,m2,L1,L2,gv,'eul');
 
 %% ODE 45 
 
